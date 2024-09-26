@@ -24,9 +24,9 @@ class _LandingPageState extends State<LandingPage> {
             child: Column(
               children: [
                 Container(
-                  width: 550,
+                 width: 500,
                   height: 500,
-                  margin: const EdgeInsets.fromLTRB(100, 60, 100, 60),
+                  margin: const EdgeInsets.fromLTRB(60, 0, 60,0),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
@@ -36,21 +36,21 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 150),
+                  padding: EdgeInsets.symmetric(horizontal: 50),
                   child: Text(
                     "Let's Enjoy A New World",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 50,
+                        fontSize: 40,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
                 const SizedBox(
-                  height: 100,
+                  height: 20,
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 150),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     "Search the safe destination",
                     textAlign: TextAlign.center,
@@ -61,7 +61,7 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 100,
+                  height: 50,
                 ),
                 Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 50),
@@ -72,7 +72,7 @@ class _LandingPageState extends State<LandingPage> {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusDirectional.circular(30)),
-                          padding: const EdgeInsets.fromLTRB(200, 20, 200, 20),
+                          padding: const EdgeInsets.fromLTRB(110, 20, 100, 20),
                           backgroundColor: const Color.fromRGBO(47, 118, 148, 1.0)),
                       child: const Text(
                         'Get Start',

@@ -18,21 +18,21 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
               FocusScope.of(context).unfocus();
             },
             child: Container(
-              margin: const EdgeInsets.all(50),
+              margin: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Row(
                         children: [
                           CircleAvatar(
-                            radius: 35,
+                            radius: 25,
                             backgroundImage: AssetImage('assets/img2.png'),
                           ),
                           SizedBox(
-                            width: 20,
+                            width: 10,
                           ),
                           Text(
                             "Hi Tazhna!",
@@ -48,12 +48,12 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                             color: Colors.white,
                             borderRadius:
                                 BorderRadiusDirectional.circular(100)),
-                        width: 70,
-                        height: 70,
+                        width: 50,
+                        height: 50,
                         child: IconButton(
                             onPressed: () {},
                             icon: const Icon(
-                              size: 45,
+                              size: 35,
                               Icons.add_alert,
                               color: Colors.grey,
                             )),
@@ -61,27 +61,27 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                     ],
                   ),
                   const SizedBox(
-                    height: 55,
+                    height: 30,
                   ),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(8, 0, 200, 0),
+                    padding: EdgeInsets.fromLTRB(8, 0, 100, 0),
                     child: Text(
                       'Where you want to go?',
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: 35,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2),
                     ),
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 15,
                   ),
                   TextField(
-                    style: const TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 20),
                     decoration: InputDecoration(
                         contentPadding:
-                            const EdgeInsets.symmetric(vertical: 25),
+                            const EdgeInsets.symmetric(vertical: 18),
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
@@ -89,7 +89,7 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                         fillColor: Colors.white,
                         prefixIcon: const Icon(
                           Icons.search_rounded,
-                          size: 40,
+                          size: 30,
                         ),
                         prefixIconColor: Colors.grey,
                         prefixIconConstraints:
@@ -99,7 +99,7 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                             const TextStyle(color: Colors.grey, fontSize: 20)),
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(8, 0, 200, 0),
@@ -117,12 +117,12 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, '/bookfly');
+                      Navigator.pushNamed(context, '/book-fly');
                     },
                     child: Container(
-                      padding: const EdgeInsets.fromLTRB(40, 25, 40, 25),
-                      width: 700,
-                      height: 250,
+                      padding: const EdgeInsets.fromLTRB(15, 25, 15, 25),
+                      width: 400,
+                      height: 180,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           color: const Color.fromRGBO(28, 94, 133, 0.4)),
@@ -134,11 +134,13 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                             children: [
                               Text(
                                 '10 May ,12:30pm',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               ),
                               Text(
                                 '11 May ,08:15am',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )
                             ],
                           ),
@@ -168,16 +170,17 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                                   style: ElevatedButton.styleFrom(
                                       backgroundColor: const Color.fromRGBO(
                                           173, 206, 225, 1.0),
+                                      fixedSize: const Size(190, 20),
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadiusDirectional.circular(
                                                   5))),
                                   onPressed: () {},
                                   child: const Text(
-                                    'Abianca , Sodaium',
+                                    'Bianca , Sodium',
                                     style: TextStyle(
                                         color: Color.fromRGBO(28, 94, 133, 1.0),
-                                        fontSize: 17),
+                                        fontSize: 16),
                                   )),
                               ElevatedButton(
                                   style: ElevatedButton.styleFrom(
@@ -188,7 +191,7 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                                               BorderRadiusDirectional.circular(
                                                   5))),
                                   onPressed: () {},
-                                  child: const Text('Xyzaira , Filanto',
+                                  child: const Text('Zaira , Filament',
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(28, 94, 133, 1.0),
@@ -200,42 +203,42 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                     ),
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
-                  Container(
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Popular Destinations',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 2),
-                        ),
-                        Text(
-                          'Viwe All',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline,
-                              decorationColor: Colors.white,
-                              letterSpacing: 2),
-                        ),
-                      ],
-                    ),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Popular Destinations',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 2),
+                      ),
+                      Text(
+                        'View All',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            decoration: TextDecoration.underline,
+                            decorationColor: Colors.white,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                          padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                           color: Colors.white,
-                          width: 210,
-                          height: 320,
+                          width: 170,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -256,10 +259,9 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                         ),
                         const SizedBox(width: 10),
                         Container(
-                          padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                          padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                           color: Colors.white,
-                          width: 210,
-                          height: 320,
+                          width: 170,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -280,10 +282,9 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                         ),
                         const SizedBox(width: 10),
                         Container(
-                          padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                          padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                           color: Colors.white,
-                          width: 210,
-                          height: 320,
+                          width: 170,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -304,10 +305,9 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                         ),
                         const SizedBox(width: 10),
                         Container(
-                          padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                          padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                           color: Colors.white,
-                          width: 210,
-                          height: 320,
+                          width: 170,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -329,85 +329,6 @@ class _SearchFlightPageState extends State<SearchFlightPage> {
                       ],
                     ),
                   )
-
-                  // Row(
-                  //   children: [
-                  //     Expanded(
-                  //       child: Container(
-                  //           padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
-                  //           color: Colors.white,
-                  //           width: 210,
-                  //           height: 320,
-                  //           child: Column(
-                  //             crossAxisAlignment: CrossAxisAlignment.start,
-                  //             children: [
-                  //               Image.asset('assets/img4.png'),
-                  //               Text(
-                  //                 'Rome',
-                  //                 style: TextStyle(
-                  //                     fontSize: 22,
-                  //                     fontWeight: FontWeight.bold),
-                  //               ),
-                  //               Text(
-                  //                 'Italy',
-                  //                 style: TextStyle(fontSize: 16),
-                  //               )
-                  //             ],
-                  //           )),
-                  //     ),
-                  //     SizedBox(width: 10),
-                  //     Expanded(
-                  //       child: Container(
-                  //           padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
-                  //           color: Colors.white,
-                  //           width: 210,
-                  //           height: 320,
-                  //           child: Column(
-                  //             crossAxisAlignment: CrossAxisAlignment.start,
-                  //             children: [
-                  //               Image.asset('assets/img5.png'),
-                  //               Text(
-                  //                 'Istanbul',
-                  //                 style: TextStyle(
-                  //                     fontSize: 22,
-                  //                     fontWeight: FontWeight.bold),
-                  //               ),
-                  //               Text(
-                  //                 'Turkya',
-                  //                 style: TextStyle(fontSize: 16),
-                  //               )
-                  //             ],
-                  //           )),
-                  //     ),
-                  //     SizedBox(width: 10),
-                  //     Expanded(
-                  //       child: Container(
-                  //         padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
-                  //         color: Colors.white,
-                  //         width: 210,
-                  //         height: 320,
-                  //         child: Expanded(
-                  //           child: Column(
-                  //             crossAxisAlignment: CrossAxisAlignment.start,
-                  //             children: [
-                  //               Image.asset('assets/img3.png'),
-                  //               Text(
-                  //                 'Prise',
-                  //                 style: TextStyle(
-                  //                     fontSize: 22,
-                  //                     fontWeight: FontWeight.bold),
-                  //               ),
-                  //               Text(
-                  //                 'Frace',
-                  //                 style: TextStyle(fontSize: 16),
-                  //               )
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //     )
-                  //   ],
-                  // )
                 ],
               ),
             ),
